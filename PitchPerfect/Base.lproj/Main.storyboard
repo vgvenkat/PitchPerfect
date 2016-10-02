@@ -25,12 +25,10 @@
                                     <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HgN-Jo-jOM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TCy-wm-SxM">
-                                <frame key="frameInset" minX="135" minY="419" width="106" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TCy-wm-SxM">
                                 <state key="normal" title="Stop Recording"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Tap to record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ma7-G2-URn">
-                                <frame key="frameInset" minX="138" minY="379" width="103" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ma7-G2-URn">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -38,9 +36,11 @@
                         </subviews>
                         <color key="backgroundColor" red="0.73975247945365163" green="1" blue="0.50530867506520705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ma7-G2-URn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FEI-TR-4pC"/>
+                            <constraint firstItem="ma7-G2-URn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="2" id="FEI-TR-4pC"/>
+                            <constraint firstItem="TCy-wm-SxM" firstAttribute="top" secondItem="ma7-G2-URn" secondAttribute="bottom" constant="19" id="G8r-sM-F7g"/>
                             <constraint firstItem="F9h-n0-F66" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NdO-k4-Kr8"/>
                             <constraint firstItem="F9h-n0-F66" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QWC-aT-vOz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TCy-wm-SxM" secondAttribute="bottom" constant="218" id="mci-KI-kU5"/>
                             <constraint firstItem="TCy-wm-SxM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sdn-nm-lid"/>
                         </constraints>
                     </view>
